@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 import os
-import re
 import sys
 
 from extract import get_doc_extracts
@@ -24,6 +23,7 @@ def main():
 
     token_impl_map = {}
     representations = {}
+    modules = {}
 
     # Extract the names of methods from lib.go
     for file in walk_indices(stdlib_path):
@@ -45,7 +45,15 @@ def main():
                 'doc': transform_extract(extract),
             })
 
-    dump_yaml(representations, 'stdlib-docs-rep.yaml')
+    for name in sorted(representations.keys()):
+        modules[name] = {
+            'name': name,
+            'functions': sorted(representations[name], key=lambda i: i['token']),
+        }
+
+    dump_yaml({
+        'modules': modules
+    }, 'stdlib-docs-rep.yaml')
 
 
 if __name__ == '__main__':
