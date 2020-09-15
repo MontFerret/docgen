@@ -1179,79 +1179,79 @@ modules:
           desc: 'An object containing the following properties :'
           optional: true
           default_value:
-        - name: params
+        - name: params.driver
           type:
           - String
           desc: Driver name to use.
           optional: true
-          default_value: .driver
-        - name: params
+          default_value:
+        - name: params.timeout
           type:
           - Int
           desc: Page load timeout.
           optional: true
-          default_value: .timeout=60000
-        - name: params
+          default_value: '60000'
+        - name: params.userAgent
           type:
           - String
           desc: Custom user agent.
           optional: true
-          default_value: .userAgent
-        - name: params
+          default_value:
+        - name: params.keepCookies
           type:
           - Boolean
           desc: Boolean value indicating whether to use cookies from previous sessions
             i.e. not to open a page in the incognito mode.
           optional: true
-          default_value: .keepCookies=False
-        - name: params
+          default_value: 'False'
+        - name: params.cookies
           type:
           - HTTPCookies
           desc: Set of http cookies to use during page loading.
           optional: true
-          default_value: .cookies
-        - name: params
+          default_value:
+        - name: params.headers
           type:
           - HTTPHeaders
           desc: Set of http headers to use during page loading.
           optional: true
-          default_value: .headers
-        - name: params
+          default_value:
+        - name: params.viewport
           type:
           - Object
           desc: Viewport params.
           optional: true
-          default_value: .viewport
-        - name: params
+          default_value:
+        - name: params.viewport.height
           type:
           - Int
           desc: Viewport height.
           optional: true
-          default_value: .viewport.height
-        - name: params
+          default_value:
+        - name: params.viewport.width
           type:
           - Int
           desc: Viewport width.
           optional: true
-          default_value: .viewport.width
-        - name: params
+          default_value:
+        - name: params.viewport.scaleFactor
           type:
           - Float
           desc: Viewport scale factor.
           optional: true
-          default_value: .viewport.scaleFactor
-        - name: params
+          default_value:
+        - name: params.viewport.mobile
           type:
           - Boolean
           desc: Value that indicates whether to emulate mobile device.
           optional: true
-          default_value: .viewport.mobile
-        - name: params
+          default_value:
+        - name: params.viewport.landscape
           type:
           - Boolean
           desc: Value that indicates whether to render a page in landscape position.
           optional: true
-          default_value: .viewport.landscape
+          default_value:
         returns:
           name:
           type:
@@ -1827,67 +1827,67 @@ modules:
           desc: 'An object containing the following properties:'
           optional: true
           default_value:
-        - name: params
+        - name: params.driver
           type:
           - String
           desc: Name of a driver to parse with.
           optional: true
-          default_value: .driver
-        - name: params
+          default_value:
+        - name: params.keepCookies
           type:
           - Boolean
           desc: Boolean value indicating whether to use cookies from previous sessions
             i.e. not to open a page in the incognito mode.
           optional: true
-          default_value: .keepCookies=False
-        - name: params
+          default_value: 'False'
+        - name: params.cookies
           type:
           - HTTPCookies
           desc: Set of http cookies to use during page loading.
           optional: true
-          default_value: .cookies
-        - name: params
+          default_value:
+        - name: params.headers
           type:
           - HTTPHeaders
           desc: Set of http headers to use during page loading.
           optional: true
-          default_value: .headers
-        - name: params
+          default_value:
+        - name: params.viewport
           type:
           - Object
           desc: Viewport params.
           optional: true
-          default_value: .viewport
-        - name: params
+          default_value:
+        - name: params.viewport.height
           type:
           - Int
           desc: Viewport height.
           optional: true
-          default_value: .viewport.height
-        - name: params
+          default_value:
+        - name: params.viewport.width
           type:
           - Int
           desc: Viewport width.
           optional: true
-          default_value: .viewport.width
-        - name: params
+          default_value:
+        - name: params.viewport.scaleFactor
           type:
           - Float
           desc: Viewport scale factor.
           optional: true
-          default_value: .viewport.scaleFactor
-        - name: params
+          default_value:
+        - name: params.viewport.mobile
           type:
           - Boolean
           desc: Value that indicates whether to emulate mobile device.
           optional: true
-          default_value: .viewport.mobile
-        - name: params
+          default_value:
+        - name: params.viewport.landscape
           type:
           - Boolean
           desc: Value that indicates whether to render a page in landscape position.
           optional: true
-          default_value: .viewport.landscape
+          default_value:
         returns:
           name:
           type:
@@ -1912,100 +1912,100 @@ modules:
           desc: 'An object containing the following properties:'
           optional: true
           default_value:
-        - name: params
+        - name: params.landscape
           type:
           - Bool
           desc: Paper orientation.
           optional: true
-          default_value: .landscape=False
-        - name: params
+          default_value: 'False'
+        - name: params.displayHeaderFooter
           type:
           - Bool
           desc: Display header and footer.
           optional: true
-          default_value: .displayHeaderFooter=False
-        - name: params
+          default_value: 'False'
+        - name: params.printBackground
           type:
           - Bool
           desc: Print background graphics.
           optional: true
-          default_value: .printBackground=False
-        - name: params
+          default_value: 'False'
+        - name: params.scale
           type:
           - Float
           desc: Scale of the webpage rendering.
           optional: true
-          default_value: .scale=1
-        - name: params
+          default_value: '1'
+        - name: params.paperWidth
           type:
           - Float
           desc: Paper width in inches.
           optional: true
-          default_value: .paperWidth=22
-        - name: params
+          default_value: '22'
+        - name: params.paperHeight
           type:
           - Float
           desc: Paper height in inches.
           optional: true
-          default_value: .paperHeight=28
-        - name: params
+          default_value: '28'
+        - name: params.marginTo
           type:
           - Float
           desc: Top margin in inches.
           optional: true
-          default_value: .marginTo=1
-        - name: params
+          default_value: '1'
+        - name: params.marginBottom
           type:
           - Float
           desc: Bottom margin in inches.
           optional: true
-          default_value: .marginBottom=1
-        - name: params
+          default_value: '1'
+        - name: params.marginLeft
           type:
           - Float
           desc: Left margin in inches.
           optional: true
-          default_value: .marginLeft=1
-        - name: params
+          default_value: '1'
+        - name: params.marginRight
           type:
           - Float
           desc: Right margin in inches.
           optional: true
-          default_value: .marginRight=1
-        - name: params
+          default_value: '1'
+        - name: params.pageRanges
           type:
           - String
           desc: 13'.
           optional: true
-          default_value: .pageRanges
-        - name: params
+          default_value:
+        - name: params.ignoreInvalidPageRanges
           type:
           - Bool
           desc: 2'.
           optional: true
-          default_value: .ignoreInvalidPageRanges=False
-        - name: params
+          default_value: 'False'
+        - name: params.headerTemplate
           type:
           - String
           desc: '`totalpages`: total pages in the document for example, `<span class=title></span>`
             would generate span containing the title.'
           optional: true
-          default_value: .headerTemplate
-        - name: params
+          default_value:
+        - name: params.footerTemplate
           type:
           - String
           desc: Html template for the print footer. should use the same format as
             the `headertemplate`.
           optional: true
-          default_value: .footerTemplate
-        - name: params
+          default_value:
+        - name: params.preferCSSPageSize
           type:
           - Bool
           desc: Whether or not to prefer page size as defined by css. defaults to
             false, in which case the content will be scaled to fit the paper size.
             *
           optional: true
-          default_value: .preferCSSPageSize=False
+          default_value: 'False'
         returns:
           name:
           type:
@@ -2030,46 +2030,46 @@ modules:
           desc: 'An object containing the following properties :'
           optional: true
           default_value:
-        - name: params
+        - name: params.x
           type:
           - Float
           - Int
           desc: X position of the viewport.
           optional: true
-          default_value: .x=0
-        - name: params
+          default_value: '0'
+        - name: params.y
           type:
           - Float
           - Int
           desc: Y position of the viewport.
           optional: true
-          default_value: .y=0
-        - name: params
+          default_value: '0'
+        - name: params.width
           type:
           - Float
           - Int
           desc: Width of the viewport.
           optional: true
-          default_value: .width
-        - name: params
+          default_value:
+        - name: params.height
           type:
           - Float
           - Int
           desc: Height of the viewport.
           optional: true
-          default_value: .height
-        - name: params
+          default_value:
+        - name: params.format
           type:
           - String
           desc: Either "jpeg" or "png".
           optional: true
-          default_value: .format="jpeg"
-        - name: params
+          default_value: '"jpeg"'
+        - name: params.quality
           type:
           - Int
           desc: Quality, in [0, 100], only for jpeg format.
           optional: true
-          default_value: .quality=100
+          default_value: '100'
         returns:
           name:
           type:
@@ -2107,24 +2107,24 @@ modules:
           desc: Scroll params.
           optional: true
           default_value:
-        - name: params
+        - name: params.behavior
           type:
           - String
           desc: Scroll behavior
           optional: true
-          default_value: .behavior="instant"
-        - name: params
+          default_value: '"instant"'
+        - name: params.block
           type:
           - String
           desc: Scroll vertical alignment.
           optional: true
-          default_value: .block="center"
-        - name: params
+          default_value: '"center"'
+        - name: params.inline
           type:
           - String
           desc: Scroll horizontal alignment.
           optional: true
-          default_value: .inline="center"
+          default_value: '"center"'
         returns:
     - token: SCROLL_BOTTOM
       file_name: html/scroll_bottom.go
@@ -2158,24 +2158,24 @@ modules:
           desc: Scroll params.
           optional: true
           default_value:
-        - name: params
+        - name: params.behavior
           type:
           - String
           desc: Scroll behavior
           optional: true
-          default_value: .behavior="instant"
-        - name: params
+          default_value: '"instant"'
+        - name: params.block
           type:
           - String
           desc: Scroll vertical alignment.
           optional: true
-          default_value: .block="center"
-        - name: params
+          default_value: '"center"'
+        - name: params.inline
           type:
           - String
           desc: Scroll horizontal alignment.
           optional: true
-          default_value: .inline="center"
+          default_value: '"center"'
         returns:
     - token: SCROLL_ELEMENT
       file_name: html/scroll_element.go
@@ -2203,24 +2203,24 @@ modules:
           desc: Scroll params.
           optional: true
           default_value:
-        - name: params
+        - name: params.behavior
           type:
           - String
           desc: Scroll behavior
           optional: true
-          default_value: .behavior="instant"
-        - name: params
+          default_value: '"instant"'
+        - name: params.block
           type:
           - String
           desc: Scroll vertical alignment.
           optional: true
-          default_value: .block="center"
-        - name: params
+          default_value: '"center"'
+        - name: params.inline
           type:
           - String
           desc: Scroll horizontal alignment.
           optional: true
-          default_value: .inline="center"
+          default_value: '"center"'
         returns:
     - token: SCROLL_TOP
       file_name: html/scroll_top.go
@@ -2254,24 +2254,24 @@ modules:
           desc: Scroll params.
           optional: true
           default_value:
-        - name: params
+        - name: params.behavior
           type:
           - String
           desc: Scroll behavior
           optional: true
-          default_value: .behavior="instant"
-        - name: params
+          default_value: '"instant"'
+        - name: params.block
           type:
           - String
           desc: Scroll vertical alignment.
           optional: true
-          default_value: .block="center"
-        - name: params
+          default_value: '"center"'
+        - name: params.inline
           type:
           - String
           desc: Scroll horizontal alignment.
           optional: true
-          default_value: .inline="center"
+          default_value: '"center"'
         returns:
     - token: SELECT
       file_name: html/select.go
@@ -2575,24 +2575,24 @@ modules:
           desc: Navigation parameters.
           optional: true
           default_value: None
-        - name: params
+        - name: params.timeout
           type:
           - Int
           desc: Navigation timeout.
           optional: true
-          default_value: .timeout=5000
-        - name: params
+          default_value: '5000'
+        - name: params.target
           type:
           - Int
           desc: Navigation target url.
           optional: true
-          default_value: .target
-        - name: params
+          default_value:
+        - name: params.frame
           type:
           - HTMLDocument
           desc: Navigation frame.
           optional: true
-          default_value: .frame
+          default_value:
         returns:
     - token: WAIT_NO_ATTR
       file_name: html/wait_attr.go
@@ -3005,13 +3005,13 @@ modules:
           desc: 'Additional parameters:'
           optional: true
           default_value:
-        - name: params
+        - name: params.mode
           type:
           - String
           desc: 'Write (default): will create a file if the specified file does not
             exist'
           optional: true
-          default_value: .mode
+          default_value:
         returns:
   io/net/http:
     name: io/net/http
@@ -3040,12 +3040,12 @@ modules:
           desc: Request data
           optional: false
           default_value:
-        - name: params
+        - name: params.headers
           type:
           - Object
           desc: Http headers
           optional: true
-          default_value: .headers
+          default_value:
         returns:
           name:
           type:
@@ -3081,12 +3081,12 @@ modules:
           desc: Request data
           optional: false
           default_value:
-        - name: params
+        - name: params.headers
           type:
           - Object
           desc: Http headers
           optional: true
-          default_value: .headers
+          default_value:
         returns:
           name:
           type:
@@ -3105,18 +3105,18 @@ modules:
           desc: Target url or parameters.
           optional: false
           default_value:
-        - name: param
+        - name: param.url
           type:
           - String
           desc: Target url or parameters.
           optional: true
-          default_value: .url
-        - name: param
+          default_value:
+        - name: param.headers
           type:
           - Object
           desc: Http headers
           optional: true
-          default_value: .headers
+          default_value:
         returns:
           name:
           type:
@@ -3146,12 +3146,12 @@ modules:
           desc: Request data
           optional: false
           default_value:
-        - name: params
+        - name: params.headers
           type:
           - Object
           desc: Http headers
           optional: true
-          default_value: .headers
+          default_value:
         returns:
           name:
           type:
@@ -3181,12 +3181,12 @@ modules:
           desc: Request data
           optional: false
           default_value:
-        - name: params
+        - name: params.headers
           type:
           - Object
           desc: Http headers
           optional: true
-          default_value: .headers
+          default_value:
         returns:
           name:
           type:

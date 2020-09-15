@@ -34,7 +34,7 @@ def process_name(text):
         return text, False, None
 
     regex = re.compile(
-        '\[(?P<name>[A-Za-z]+)(?P<eq>=)?(?P<value>.+)?\]',
+        '\[(?P<name>[A-Za-z.]+)(?P<eq>=)?(?P<value>.+)?\]',
     )
 
     match = regex.search(text)
