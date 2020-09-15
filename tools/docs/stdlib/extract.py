@@ -38,7 +38,6 @@ stdlib_testing_signature = re.compile(
     'var\s+(\w+)\s+=\s+base.Assertion'
 )
 
-
 def get_doc_extracts(go_file, directory, token_impl_map):
     go_lines, go_code = {}, None
 
@@ -112,7 +111,6 @@ def get_doc_extracts(go_file, directory, token_impl_map):
 
         if token_name is None:
             token_name = impl_name
-            print(f'Token against {impl_name} was not found')
 
         # TODO: token_name should be the name the method registers itself with
         # instead of the name of the method that implements it.
@@ -135,3 +133,13 @@ def get_token_impl_map(go_file):
     with open(go_file, 'r') as file:
         for match in regex.finditer(file.read()):
             yield {match.group('impl'): match.group('token')}
+
+
+def get_namespace(go_file):
+    regex = re.compile(
+        '@namespace\s*(?P<name>\w+)'
+    )
+
+    with open(go_file, 'r') as file:
+        for match in regex.finditer(file.read()):
+            yield match.group("name")

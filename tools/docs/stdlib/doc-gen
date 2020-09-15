@@ -2,9 +2,11 @@
 
 import os
 import sys
+from pathlib import Path
 
 from extract import get_doc_extracts
 from extract import get_token_impl_map
+from extract import get_namespace
 from files import dump_yaml
 from files import walk_implementations
 from files import walk_indices
@@ -23,6 +25,7 @@ def main():
 
     token_impl_map = {}
     representations = {}
+    namespaces = {}
     modules = {}
 
     # Extract the names of methods from lib.go
@@ -30,15 +33,33 @@ def main():
         for token in get_token_impl_map(file):
             token_impl_map.update(**token)
 
+        # Extracting namespaces based on file
+        for namespace in get_namespace(file):
+            p = Path(file)
+
+            package_path = os.path.dirname(p.relative_to(stdlib_path))
+            parent_package_path = p.parents[1].relative_to(stdlib_path).as_posix()
+
+            if parent_package_path in namespaces:
+                parent_namespace = namespaces[parent_package_path]
+                namespaces[package_path] = parent_namespace + "::" + namespace
+            else:
+                namespaces[package_path] = namespace
+
     # Extract the documentation data
     for file in walk_implementations(stdlib_path):
         for extract in get_doc_extracts(file, stdlib_path, token_impl_map):
             package = extract.token_package
+            namespace = ""
+
+            if extract.token_package in namespaces:
+                namespace = namespaces[extract.token_package]
 
             if not representations.get(package):
                 representations[package] = []
 
             representations[package].append({
+                'namespace': namespace,
                 'token': extract.token_name,
                 'file_name': extract.file_name,
                 'line_number': extract.line_number,
