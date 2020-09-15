@@ -1,9 +1,9 @@
 modules:
   arrays:
     name: arrays
+    namespace: ''
     functions:
-    - namespace: ''
-      token: APPEND
+    - token: APPEND
       file_name: arrays/append.go
       line_number: 15
       doc:
@@ -28,8 +28,7 @@ modules:
           type:
           - Any[]
           desc: New array.
-    - namespace: ''
-      token: FIRST
+    - token: FIRST
       file_name: arrays/first.go
       line_number: 13
       doc:
@@ -46,8 +45,7 @@ modules:
           type:
           - Any
           desc: First element in a given array.
-    - namespace: ''
-      token: FLATTEN
+    - token: FLATTEN
       file_name: arrays/flatten.go
       line_number: 18
       doc:
@@ -73,8 +71,7 @@ modules:
           type:
           - Any[]
           desc: Flat array.
-    - namespace: ''
-      token: INTERSECTION
+    - token: INTERSECTION
       file_name: arrays/intersection.go
       line_number: 15
       doc:
@@ -94,8 +91,7 @@ modules:
           - Any[]
           desc: A single array with only the elements, which exist in all provided
             arrays.
-    - namespace: ''
-      token: LAST
+    - token: LAST
       file_name: arrays/last.go
       line_number: 13
       doc:
@@ -112,8 +108,7 @@ modules:
           type:
           - Any
           desc: Last element of an array.
-    - namespace: ''
-      token: MINUS
+    - token: MINUS
       file_name: arrays/minus.go
       line_number: 14
       doc:
@@ -133,8 +128,7 @@ modules:
           - Any[]
           desc: An array of values that occur in the first array, but not in any of
             the subsequent arrays.
-    - namespace: ''
-      token: NTH
+    - token: NTH
       file_name: arrays/nth.go
       line_number: 16
       doc:
@@ -160,8 +154,7 @@ modules:
           type:
           - Any
           desc: The array element at the given position.
-    - namespace: ''
-      token: OUTERSECTION
+    - token: OUTERSECTION
       file_name: arrays/outersection.go
       line_number: 12
       doc:
@@ -180,8 +173,7 @@ modules:
           - Any[]
           desc: A single array with only the elements that exist only once across
             all provided arrays.
-    - namespace: ''
-      token: POP
+    - token: POP
       file_name: arrays/pop.go
       line_number: 13
       doc:
@@ -198,8 +190,7 @@ modules:
           type:
           - Any[]
           desc: Copy of an array without last element.
-    - namespace: ''
-      token: POSITION
+    - token: POSITION
       file_name: arrays/position.go
       line_number: 15
       doc:
@@ -230,8 +221,7 @@ modules:
           - Boolean
           - Int
           desc: A value indicating whether an element is contained in array.
-    - namespace: ''
-      token: PUSH
+    - token: PUSH
       file_name: arrays/push.go
       line_number: 15
       doc:
@@ -260,8 +250,7 @@ modules:
           type:
           - Any[]
           desc: A new array with appended value.
-    - namespace: ''
-      token: REMOVE_NTH
+    - token: REMOVE_NTH
       file_name: arrays/remove_nth.go
       line_number: 14
       doc:
@@ -284,8 +273,7 @@ modules:
           type:
           - Any[]
           desc: A new array without an element by a given position.
-    - namespace: ''
-      token: REMOVE_VALUE
+    - token: REMOVE_VALUE
       file_name: arrays/remove_value.go
       line_number: 16
       doc:
@@ -315,8 +303,7 @@ modules:
           type:
           - Any[]
           desc: A new array with removed all occurrences of value in a given array.
-    - namespace: ''
-      token: REMOVE_VALUES
+    - token: REMOVE_VALUES
       file_name: arrays/remove_values.go
       line_number: 14
       doc:
@@ -340,8 +327,7 @@ modules:
           type:
           - Any[]
           desc: A new array with removed all occurrences of values in a given array.
-    - namespace: ''
-      token: SHIFT
+    - token: SHIFT
       file_name: arrays/shift.go
       line_number: 13
       doc:
@@ -358,8 +344,7 @@ modules:
           type:
           - Any[]
           desc: Copy of an array without the first element.
-    - namespace: ''
-      token: SLICE
+    - token: SLICE
       file_name: arrays/slice.go
       line_number: 15
       doc:
@@ -388,8 +373,7 @@ modules:
           type:
           - Any[]
           desc: Sliced array.
-    - namespace: ''
-      token: SORTED
+    - token: SORTED
       file_name: arrays/sorted.go
       line_number: 14
       doc:
@@ -407,8 +391,7 @@ modules:
           type:
           - Any[]
           desc: Sorted array.
-    - namespace: ''
-      token: SORTED_UNIQUE
+    - token: SORTED_UNIQUE
       file_name: arrays/sorted_unique.go
       line_number: 15
       doc:
@@ -427,8 +410,7 @@ modules:
           type:
           - Any[]
           desc: Sorted array.
-    - namespace: ''
-      token: UNION
+    - token: UNION
       file_name: arrays/union.go
       line_number: 13
       doc:
@@ -445,8 +427,7 @@ modules:
           type:
           - Any[]
           desc: All array elements combined in a single array, in any order.
-    - namespace: ''
-      token: UNION_DISTINCT
+    - token: UNION_DISTINCT
       file_name: arrays/union_distinct.go
       line_number: 13
       doc:
@@ -463,8 +444,7 @@ modules:
           type:
           - Any[]
           desc: All unique array elements combined in a single array, in any order.
-    - namespace: ''
-      token: UNIQUE
+    - token: UNIQUE
       file_name: arrays/unique.go
       line_number: 13
       doc:
@@ -481,8 +461,7 @@ modules:
           type:
           - Any[]
           desc: New array without duplicates.
-    - namespace: ''
-      token: UNSHIFT
+    - token: UNSHIFT
       file_name: arrays/unshift.go
       line_number: 15
       doc:
@@ -514,9 +493,9 @@ modules:
           desc: New array with prepended value.
   collections:
     name: collections
+    namespace: ''
     functions:
-    - namespace: ''
-      token: INCLUDES
+    - token: INCLUDES
       file_name: collections/include.go
       line_number: 14
       doc:
@@ -543,8 +522,7 @@ modules:
           - Boolean
           desc: A boolean value that indicates whether a container contains a given
             value.
-    - namespace: ''
-      token: LENGTH
+    - token: LENGTH
       file_name: collections/length.go
       line_number: 14
       doc:
@@ -561,8 +539,7 @@ modules:
           type:
           - Int
           desc: The length of the value.
-    - namespace: ''
-      token: REVERSE
+    - token: REVERSE
       file_name: collections/reverse.go
       line_number: 13
       doc:
@@ -583,9 +560,9 @@ modules:
           desc: A reversed version of a given value.
   datetime:
     name: datetime
+    namespace: ''
     functions:
-    - namespace: ''
-      token: DATE
+    - token: DATE
       file_name: datetime/date.go
       line_number: 14
       doc:
@@ -602,8 +579,7 @@ modules:
           type:
           - DateTime
           desc: New datetime object derived from timestring.
-    - namespace: ''
-      token: DATE_ADD
+    - token: DATE_ADD
       file_name: datetime/add_subtract.go
       line_number: 30
       doc:
@@ -635,8 +611,7 @@ modules:
           type:
           - DateTime
           desc: Calculated date.
-    - namespace: ''
-      token: DATE_COMPARE
+    - token: DATE_COMPARE
       file_name: datetime/compare.go
       line_number: 17
       doc:
@@ -672,8 +647,7 @@ modules:
           type:
           - Boolean
           desc: True if the dates match, else false.
-    - namespace: ''
-      token: DATE_DAY
+    - token: DATE_DAY
       file_name: datetime/day.go
       line_number: 13
       doc:
@@ -690,8 +664,7 @@ modules:
           type:
           - Int
           desc: A day number.
-    - namespace: ''
-      token: DATE_DAYOFWEEK
+    - token: DATE_DAYOFWEEK
       file_name: datetime/dayofweek.go
       line_number: 13
       doc:
@@ -709,8 +682,7 @@ modules:
           type:
           - Int
           desc: Number of the weekday.
-    - namespace: ''
-      token: DATE_DAYOFYEAR
+    - token: DATE_DAYOFYEAR
       file_name: datetime/dayofyear.go
       line_number: 14
       doc:
@@ -728,8 +700,7 @@ modules:
           type:
           - Int
           desc: A day of year number.
-    - namespace: ''
-      token: DATE_DAYS_IN_MONTH
+    - token: DATE_DAYS_IN_MONTH
       file_name: datetime/daysinmonth.go
       line_number: 29
       doc:
@@ -746,8 +717,7 @@ modules:
           type:
           - Int
           desc: Number of the days.
-    - namespace: ''
-      token: DATE_DIFF
+    - token: DATE_DIFF
       file_name: datetime/diff.go
       line_number: 16
       doc:
@@ -783,8 +753,7 @@ modules:
           - Int
           - Float
           desc: Difference between date1 and date2.
-    - namespace: ''
-      token: DATE_FORMAT
+    - token: DATE_FORMAT
       file_name: datetime/format.go
       line_number: 13
       doc:
@@ -801,8 +770,7 @@ modules:
           type:
           - String
           desc: Formatted date.
-    - namespace: ''
-      token: DATE_HOUR
+    - token: DATE_HOUR
       file_name: datetime/hour.go
       line_number: 13
       doc:
@@ -819,8 +787,7 @@ modules:
           type:
           - Int
           desc: An hour number.
-    - namespace: ''
-      token: DATE_LEAPYEAR
+    - token: DATE_LEAPYEAR
       file_name: datetime/leapyear.go
       line_number: 13
       doc:
@@ -837,8 +804,7 @@ modules:
           type:
           - Boolean
           desc: Date is in a leap year.
-    - namespace: ''
-      token: DATE_MILLISECOND
+    - token: DATE_MILLISECOND
       file_name: datetime/millisecond.go
       line_number: 13
       doc:
@@ -855,8 +821,7 @@ modules:
           type:
           - Int
           desc: A millisecond number.
-    - namespace: ''
-      token: DATE_MINUTE
+    - token: DATE_MINUTE
       file_name: datetime/minute.go
       line_number: 13
       doc:
@@ -873,8 +838,7 @@ modules:
           type:
           - Int
           desc: A minute number.
-    - namespace: ''
-      token: DATE_MONTH
+    - token: DATE_MONTH
       file_name: datetime/month.go
       line_number: 13
       doc:
@@ -891,8 +855,7 @@ modules:
           type:
           - Int
           desc: A month number.
-    - namespace: ''
-      token: DATE_QUARTER
+    - token: DATE_QUARTER
       file_name: datetime/quarter.go
       line_number: 14
       doc:
@@ -909,8 +872,7 @@ modules:
           type:
           - Int
           desc: A quarter number.
-    - namespace: ''
-      token: DATE_SECOND
+    - token: DATE_SECOND
       file_name: datetime/second.go
       line_number: 13
       doc:
@@ -927,8 +889,7 @@ modules:
           type:
           - Int
           desc: A second number.
-    - namespace: ''
-      token: DATE_SUBTRACT
+    - token: DATE_SUBTRACT
       file_name: datetime/add_subtract.go
       line_number: 60
       doc:
@@ -960,8 +921,7 @@ modules:
           type:
           - DateTime
           desc: Calculated date.
-    - namespace: ''
-      token: DATE_YEAR
+    - token: DATE_YEAR
       file_name: datetime/year.go
       line_number: 13
       doc:
@@ -978,8 +938,7 @@ modules:
           type:
           - Int
           desc: A year number.
-    - namespace: ''
-      token: NOW
+    - token: NOW
       file_name: datetime/now.go
       line_number: 12
       doc:
@@ -992,9 +951,9 @@ modules:
           desc: New datetime object.
   html:
     name: html
+    namespace: ''
     functions:
-    - namespace: ''
-      token: ATTR_GET
+    - token: ATTR_GET
       file_name: html/attr_get.go
       line_number: 14
       doc:
@@ -1019,8 +978,7 @@ modules:
           type:
           - Object
           desc: Key-value pairs of attribute values.
-    - namespace: ''
-      token: ATTR_REMOVE
+    - token: ATTR_REMOVE
       file_name: html/attr_remove.go
       line_number: 14
       doc:
@@ -1041,8 +999,7 @@ modules:
           optional: false
           default_value:
         returns:
-    - namespace: ''
-      token: ATTR_SET
+    - token: ATTR_SET
       file_name: html/attr_set.go
       line_number: 15
       doc:
@@ -1071,8 +1028,7 @@ modules:
           optional: false
           default_value:
         returns:
-    - namespace: ''
-      token: BLUR
+    - token: BLUR
       file_name: html/blur.go
       line_number: 13
       doc:
@@ -1093,8 +1049,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: ''
-      token: CLICK
+    - token: CLICK
       file_name: html/click.go
       line_number: 15
       doc:
@@ -1122,8 +1077,7 @@ modules:
           optional: true
           default_value: '1'
         returns:
-    - namespace: ''
-      token: CLICK_ALL
+    - token: CLICK_ALL
       file_name: html/click_all.go
       line_number: 16
       doc:
@@ -1154,8 +1108,7 @@ modules:
           type:
           - Boolean
           desc: True if matched at least one element.
-    - namespace: ''
-      token: COOKIE_DEL
+    - token: COOKIE_DEL
       file_name: html/cookie_del.go
       line_number: 14
       doc:
@@ -1175,8 +1128,7 @@ modules:
           optional: false
           default_value:
         returns:
-    - namespace: ''
-      token: COOKIE_GET
+    - token: COOKIE_GET
       file_name: html/cookie_get.go
       line_number: 15
       doc:
@@ -1199,8 +1151,7 @@ modules:
           type:
           - HTTPCookie
           desc: Cookie if found, otherwise none.
-    - namespace: ''
-      token: COOKIE_SET
+    - token: COOKIE_SET
       file_name: html/cookie_set.go
       line_number: 13
       doc:
@@ -1219,8 +1170,7 @@ modules:
           optional: false
           default_value:
         returns:
-    - namespace: ''
-      token: DOCUMENT
+    - token: DOCUMENT
       file_name: html/document.go
       line_number: 36
       doc:
@@ -1311,8 +1261,7 @@ modules:
           type:
           - HTMLPage
           desc: Loaded html page.
-    - namespace: ''
-      token: DOWNLOAD
+    - token: DOWNLOAD
       file_name: html/download.go
       line_number: 15
       doc:
@@ -1329,8 +1278,7 @@ modules:
           type:
           - Binary
           desc: A base64 encoded string in binary format.
-    - namespace: ''
-      token: ELEMENT
+    - token: ELEMENT
       file_name: html/element.go
       line_number: 16
       doc:
@@ -1356,8 +1304,7 @@ modules:
           type:
           - HTMLElement
           desc: A matched html element
-    - namespace: ''
-      token: ELEMENTS
+    - token: ELEMENTS
       file_name: html/elements.go
       line_number: 14
       doc:
@@ -1383,8 +1330,7 @@ modules:
           type:
           - HTMLElement[]
           desc: An array of matched html elements.
-    - namespace: ''
-      token: ELEMENTS_COUNT
+    - token: ELEMENTS_COUNT
       file_name: html/elements_count.go
       line_number: 14
       doc:
@@ -1410,8 +1356,7 @@ modules:
           type:
           - Int
           desc: A number of matched html elements by a given css selector.
-    - namespace: ''
-      token: ELEMENT_EXISTS
+    - token: ELEMENT_EXISTS
       file_name: html/element_exists.go
       line_number: 13
       doc:
@@ -1438,8 +1383,7 @@ modules:
           - Boolean
           desc: A boolean value indicating whether there is an element matched by
             selector.
-    - namespace: ''
-      token: FOCUS
+    - token: FOCUS
       file_name: html/focus.go
       line_number: 13
       doc:
@@ -1460,8 +1404,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: ''
-      token: FRAMES
+    - token: FRAMES
       file_name: html/find_frames.go
       line_number: 15
       doc:
@@ -1491,8 +1434,7 @@ modules:
           type:
           - HTMLDocument[]
           desc: Returns an array of found html frames.
-    - namespace: ''
-      token: HOVER
+    - token: HOVER
       file_name: html/hover.go
       line_number: 15
       doc:
@@ -1515,8 +1457,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: ''
-      token: INNER_HTML
+    - token: INNER_HTML
       file_name: html/get_inner_html.go
       line_number: 15
       doc:
@@ -1542,8 +1483,7 @@ modules:
           type:
           - String
           desc: Inner html string if a matched element, otherwise empty string.
-    - namespace: ''
-      token: INNER_HTML_ALL
+    - token: INNER_HTML_ALL
       file_name: html/get_inner_html_all.go
       line_number: 15
       doc:
@@ -1569,8 +1509,7 @@ modules:
           - String[]
           desc: An array of inner html strings if all matched elements, otherwise
             empty array.
-    - namespace: ''
-      token: INNER_HTML_SET
+    - token: INNER_HTML_SET
       file_name: html/set_inner_html.go
       line_number: 15
       doc:
@@ -1598,8 +1537,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: ''
-      token: INNER_TEXT
+    - token: INNER_TEXT
       file_name: html/get_inner_text.go
       line_number: 15
       doc:
@@ -1625,8 +1563,7 @@ modules:
           type:
           - String
           desc: Inner text if a matched element, otherwise empty string.
-    - namespace: ''
-      token: INNER_TEXT_ALL
+    - token: INNER_TEXT_ALL
       file_name: html/get_inner_text_all.go
       line_number: 15
       doc:
@@ -1651,8 +1588,7 @@ modules:
           type:
           - String[]
           desc: An array of inner text if all matched elements, otherwise empty array.
-    - namespace: ''
-      token: INNER_TEXT_SET
+    - token: INNER_TEXT_SET
       file_name: html/set_inner_text.go
       line_number: 15
       doc:
@@ -1680,8 +1616,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: ''
-      token: INPUT
+    - token: INPUT
       file_name: html/input.go
       line_number: 16
       doc:
@@ -1718,8 +1653,7 @@ modules:
           type:
           - Boolean
           desc: Returns true if an element was found.
-    - namespace: ''
-      token: INPUT_CLEAR
+    - token: INPUT_CLEAR
       file_name: html/clear.go
       line_number: 13
       doc:
@@ -1740,8 +1674,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: ''
-      token: MOUSE
+    - token: MOUSE
       file_name: html/mouse_xy.go
       line_number: 15
       doc:
@@ -1768,8 +1701,7 @@ modules:
           optional: false
           default_value:
         returns:
-    - namespace: ''
-      token: NAVIGATE
+    - token: NAVIGATE
       file_name: html/navigate.go
       line_number: 17
       doc:
@@ -1796,8 +1728,7 @@ modules:
           optional: true
           default_value: '5000'
         returns:
-    - namespace: ''
-      token: NAVIGATE_BACK
+    - token: NAVIGATE_BACK
       file_name: html/navigate_back.go
       line_number: 18
       doc:
@@ -1828,8 +1759,7 @@ modules:
           type:
           - Boolean
           desc: True if history exists and the operation succeeded, otherwise false.
-    - namespace: ''
-      token: NAVIGATE_FORWARD
+    - token: NAVIGATE_FORWARD
       file_name: html/navigate_forward.go
       line_number: 18
       doc:
@@ -1860,8 +1790,7 @@ modules:
           type:
           - Boolean
           desc: True if history exists and the operation succeeded, otherwise false.
-    - namespace: ''
-      token: PAGINATION
+    - token: PAGINATION
       file_name: html/pagination.go
       line_number: 16
       doc:
@@ -1884,8 +1813,7 @@ modules:
           optional: false
           default_value:
         returns:
-    - namespace: ''
-      token: PARSE
+    - token: PARSE
       file_name: html/parse.go
       line_number: 31
       doc:
@@ -1969,8 +1897,7 @@ modules:
           type:
           - HTMLPage
           desc: Returns parsed and loaded html page.
-    - namespace: ''
-      token: PDF
+    - token: PDF
       file_name: html/pdf.go
       line_number: 42
       doc:
@@ -2088,8 +2015,7 @@ modules:
           type:
           - Binary
           desc: Pdf document in binary format.
-    - namespace: ''
-      token: SCREENSHOT
+    - token: SCREENSHOT
       file_name: html/screenshot.go
       line_number: 22
       doc:
@@ -2153,8 +2079,7 @@ modules:
           type:
           - Binary
           desc: Screenshot in binary format.
-    - namespace: ''
-      token: SCROLL
+    - token: SCROLL
       file_name: html/scroll_xy.go
       line_number: 19
       doc:
@@ -2205,8 +2130,7 @@ modules:
           optional: true
           default_value: '"center"'
         returns:
-    - namespace: ''
-      token: SCROLL_BOTTOM
+    - token: SCROLL_BOTTOM
       file_name: html/scroll_bottom.go
       line_number: 18
       doc:
@@ -2257,8 +2181,7 @@ modules:
           optional: true
           default_value: '"center"'
         returns:
-    - namespace: ''
-      token: SCROLL_ELEMENT
+    - token: SCROLL_ELEMENT
       file_name: html/scroll_element.go
       line_number: 20
       doc:
@@ -2303,8 +2226,7 @@ modules:
           optional: true
           default_value: '"center"'
         returns:
-    - namespace: ''
-      token: SCROLL_TOP
+    - token: SCROLL_TOP
       file_name: html/scroll_top.go
       line_number: 18
       doc:
@@ -2355,8 +2277,7 @@ modules:
           optional: true
           default_value: '"center"'
         returns:
-    - namespace: ''
-      token: SELECT
+    - token: SELECT
       file_name: html/select.go
       line_number: 15
       doc:
@@ -2386,8 +2307,7 @@ modules:
           type:
           - String[]
           desc: Array of selected values.
-    - namespace: ''
-      token: STYLE_GET
+    - token: STYLE_GET
       file_name: html/style_get.go
       line_number: 14
       doc:
@@ -2410,8 +2330,7 @@ modules:
           type:
           - Object
           desc: Collection of key-value pairs of style values.
-    - namespace: ''
-      token: STYLE_REMOVE
+    - token: STYLE_REMOVE
       file_name: html/style_remove.go
       line_number: 14
       doc:
@@ -2431,8 +2350,7 @@ modules:
           optional: false
           default_value:
         returns:
-    - namespace: ''
-      token: STYLE_SET
+    - token: STYLE_SET
       file_name: html/style_set.go
       line_number: 15
       doc:
@@ -2460,8 +2378,7 @@ modules:
           optional: false
           default_value:
         returns:
-    - namespace: ''
-      token: WAIT_ATTR
+    - token: WAIT_ATTR
       file_name: html/wait_attr.go
       line_number: 17
       doc:
@@ -2502,8 +2419,7 @@ modules:
           optional: true
           default_value: '5000'
         returns:
-    - namespace: ''
-      token: WAIT_ATTR_ALL
+    - token: WAIT_ATTR_ALL
       file_name: html/wait_attr_all.go
       line_number: 17
       doc:
@@ -2538,8 +2454,7 @@ modules:
           optional: true
           default_value: '5000'
         returns:
-    - namespace: ''
-      token: WAIT_CLASS
+    - token: WAIT_CLASS
       file_name: html/wait_class.go
       line_number: 17
       doc:
@@ -2577,8 +2492,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: ''
-      token: WAIT_CLASS_ALL
+    - token: WAIT_CLASS_ALL
       file_name: html/wait_class_all.go
       line_number: 17
       doc:
@@ -2612,8 +2526,7 @@ modules:
           optional: true
           default_value: '5000'
         returns:
-    - namespace: ''
-      token: WAIT_ELEMENT
+    - token: WAIT_ELEMENT
       file_name: html/wait_element.go
       line_number: 16
       doc:
@@ -2641,8 +2554,7 @@ modules:
           optional: true
           default_value: '5000'
         returns:
-    - namespace: ''
-      token: WAIT_NAVIGATION
+    - token: WAIT_NAVIGATION
       file_name: html/wait_navigation.go
       line_number: 26
       doc:
@@ -2686,8 +2598,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: ''
-      token: WAIT_NO_ATTR
+    - token: WAIT_NO_ATTR
       file_name: html/wait_attr.go
       line_number: 27
       doc:
@@ -2728,8 +2639,7 @@ modules:
           optional: true
           default_value: '5000'
         returns:
-    - namespace: ''
-      token: WAIT_NO_ATTR_ALL
+    - token: WAIT_NO_ATTR_ALL
       file_name: html/wait_attr_all.go
       line_number: 27
       doc:
@@ -2764,8 +2674,7 @@ modules:
           optional: true
           default_value: '5000'
         returns:
-    - namespace: ''
-      token: WAIT_NO_CLASS
+    - token: WAIT_NO_CLASS
       file_name: html/wait_class.go
       line_number: 27
       doc:
@@ -2803,8 +2712,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: ''
-      token: WAIT_NO_CLASS_ALL
+    - token: WAIT_NO_CLASS_ALL
       file_name: html/wait_class_all.go
       line_number: 27
       doc:
@@ -2838,8 +2746,7 @@ modules:
           optional: true
           default_value: '5000'
         returns:
-    - namespace: ''
-      token: WAIT_NO_ELEMENT
+    - token: WAIT_NO_ELEMENT
       file_name: html/wait_element.go
       line_number: 25
       doc:
@@ -2867,8 +2774,7 @@ modules:
           optional: true
           default_value: '5000'
         returns:
-    - namespace: ''
-      token: WAIT_NO_STYLE
+    - token: WAIT_NO_STYLE
       file_name: html/wait_style.go
       line_number: 27
       doc:
@@ -2909,8 +2815,7 @@ modules:
           optional: true
           default_value: '5000'
         returns:
-    - namespace: ''
-      token: WAIT_NO_STYLE_ALL
+    - token: WAIT_NO_STYLE_ALL
       file_name: html/wait_style_all.go
       line_number: 27
       doc:
@@ -2952,8 +2857,7 @@ modules:
           optional: true
           default_value: '5000'
         returns:
-    - namespace: ''
-      token: WAIT_STYLE
+    - token: WAIT_STYLE
       file_name: html/wait_style.go
       line_number: 17
       doc:
@@ -2994,8 +2898,7 @@ modules:
           optional: true
           default_value: '5000'
         returns:
-    - namespace: ''
-      token: WAIT_STYLE_ALL
+    - token: WAIT_STYLE_ALL
       file_name: html/wait_style_all.go
       line_number: 17
       doc:
@@ -3037,8 +2940,7 @@ modules:
           optional: true
           default_value: '5000'
         returns:
-    - namespace: ''
-      token: XPATH
+    - token: XPATH
       file_name: html/xpath.go
       line_number: 14
       doc:
@@ -3065,9 +2967,9 @@ modules:
           desc: Returns result of a given xpath expression.
   io/fs:
     name: io/fs
+    namespace: IO::FS
     functions:
-    - namespace: IO::FS
-      token: READ
+    - token: READ
       file_name: io/fs/read.go
       line_number: 14
       doc:
@@ -3084,8 +2986,7 @@ modules:
           type:
           - Binary
           desc: File content in binary format.
-    - namespace: IO::FS
-      token: WRITE
+    - token: WRITE
       file_name: io/fs/write.go
       line_number: 20
       doc:
@@ -3119,9 +3020,9 @@ modules:
         returns:
   io/net/http:
     name: io/net/http
+    namespace: IO::NET::HTTP
     functions:
-    - namespace: IO::NET::HTTP
-      token: DELETE
+    - token: DELETE
       file_name: io/net/http/delete.go
       line_number: 15
       doc:
@@ -3156,8 +3057,7 @@ modules:
           type:
           - Binary
           desc: Response in binary format
-    - namespace: IO::NET::HTTP
-      token: DO
+    - token: DO
       file_name: io/net/http/request.go
       line_number: 27
       doc:
@@ -3198,8 +3098,7 @@ modules:
           type:
           - Binary
           desc: Response in binary format
-    - namespace: IO::NET::HTTP
-      token: GET
+    - token: GET
       file_name: io/net/http/get.go
       line_number: 16
       doc:
@@ -3229,8 +3128,7 @@ modules:
           type:
           - Binary
           desc: Response in binary format
-    - namespace: IO::NET::HTTP
-      token: POST
+    - token: POST
       file_name: io/net/http/post.go
       line_number: 15
       doc:
@@ -3265,8 +3163,7 @@ modules:
           type:
           - Binary
           desc: Response in binary format
-    - namespace: IO::NET::HTTP
-      token: PUT
+    - token: PUT
       file_name: io/net/http/put.go
       line_number: 15
       doc:
@@ -3303,9 +3200,9 @@ modules:
           desc: Response in binary format
   math:
     name: math
+    namespace: ''
     functions:
-    - namespace: ''
-      token: ABS
+    - token: ABS
       file_name: math/abs.go
       line_number: 14
       doc:
@@ -3323,8 +3220,7 @@ modules:
           type:
           - Float
           desc: The absolute value of a given number.
-    - namespace: ''
-      token: ACOS
+    - token: ACOS
       file_name: math/acos.go
       line_number: 14
       doc:
@@ -3342,8 +3238,7 @@ modules:
           type:
           - Float
           desc: The arccosine, in radians, of a given number.
-    - namespace: ''
-      token: ASIN
+    - token: ASIN
       file_name: math/asin.go
       line_number: 14
       doc:
@@ -3361,8 +3256,7 @@ modules:
           type:
           - Float
           desc: The arcsine, in radians, of a given number.
-    - namespace: ''
-      token: ATAN
+    - token: ATAN
       file_name: math/atan.go
       line_number: 14
       doc:
@@ -3380,8 +3274,7 @@ modules:
           type:
           - Float
           desc: The arctangent, in radians, of a given number.
-    - namespace: ''
-      token: ATAN2
+    - token: ATAN2
       file_name: math/atan2.go
       line_number: 15
       doc:
@@ -3408,8 +3301,7 @@ modules:
           - Float
           desc: The arc tangent of y/x, using the signs of the two to determine the
             quadrant of the return value.
-    - namespace: ''
-      token: AVERAGE
+    - token: AVERAGE
       file_name: math/average.go
       line_number: 13
       doc:
@@ -3427,8 +3319,7 @@ modules:
           type:
           - Float
           desc: The average of the values in array.
-    - namespace: ''
-      token: CEIL
+    - token: CEIL
       file_name: math/ceil.go
       line_number: 14
       doc:
@@ -3447,8 +3338,7 @@ modules:
           type:
           - Int
           desc: The least integer value greater than or equal to a given value.
-    - namespace: ''
-      token: COS
+    - token: COS
       file_name: math/cos.go
       line_number: 14
       doc:
@@ -3466,8 +3356,7 @@ modules:
           type:
           - Float
           desc: The cosine of a given number.
-    - namespace: ''
-      token: DEGREES
+    - token: DEGREES
       file_name: math/degrees.go
       line_number: 13
       doc:
@@ -3485,8 +3374,7 @@ modules:
           type:
           - Float
           desc: The angle in degrees
-    - namespace: ''
-      token: EXP
+    - token: EXP
       file_name: math/exp.go
       line_number: 14
       doc:
@@ -3504,8 +3392,7 @@ modules:
           type:
           - Float
           desc: Euler's constant raised to the power of value.
-    - namespace: ''
-      token: EXP2
+    - token: EXP2
       file_name: math/exp2.go
       line_number: 14
       doc:
@@ -3523,8 +3410,7 @@ modules:
           type:
           - Float
           desc: 2 raised to the power of value.
-    - namespace: ''
-      token: FLOOR
+    - token: FLOOR
       file_name: math/floor.go
       line_number: 14
       doc:
@@ -3543,8 +3429,7 @@ modules:
           type:
           - Int
           desc: The greatest integer value less than or equal to a given value.
-    - namespace: ''
-      token: LOG
+    - token: LOG
       file_name: math/log.go
       line_number: 14
       doc:
@@ -3562,8 +3447,7 @@ modules:
           type:
           - Float
           desc: The natural logarithm of a given value.
-    - namespace: ''
-      token: LOG10
+    - token: LOG10
       file_name: math/log10.go
       line_number: 14
       doc:
@@ -3581,8 +3465,7 @@ modules:
           type:
           - Float
           desc: The decimal logarithm of a given value.
-    - namespace: ''
-      token: LOG2
+    - token: LOG2
       file_name: math/log2.go
       line_number: 14
       doc:
@@ -3600,8 +3483,7 @@ modules:
           type:
           - Float
           desc: The binary logarithm of a given value.
-    - namespace: ''
-      token: MAX
+    - token: MAX
       file_name: math/max.go
       line_number: 13
       doc:
@@ -3619,8 +3501,7 @@ modules:
           type:
           - Float
           desc: The greatest of the values in array.
-    - namespace: ''
-      token: MEDIAN
+    - token: MEDIAN
       file_name: math/median.go
       line_number: 14
       doc:
@@ -3638,8 +3519,7 @@ modules:
           type:
           - Float
           desc: The median of the values in array.
-    - namespace: ''
-      token: MIN
+    - token: MIN
       file_name: math/min.go
       line_number: 13
       doc:
@@ -3657,8 +3537,7 @@ modules:
           type:
           - Float
           desc: The smallest of the values in array.
-    - namespace: ''
-      token: PERCENTILE
+    - token: PERCENTILE
       file_name: math/percentile.go
       line_number: 17
       doc:
@@ -3689,8 +3568,7 @@ modules:
           - Float
           desc: The nth percentile, or null if the array is empty or only null values
             are contained in it or the percentile cannot be calculated.
-    - namespace: ''
-      token: PI
+    - token: PI
       file_name: math/pi.go
       line_number: 12
       doc:
@@ -3701,8 +3579,7 @@ modules:
           type:
           - Float
           desc: Pi value.
-    - namespace: ''
-      token: POW
+    - token: POW
       file_name: math/pow.go
       line_number: 15
       doc:
@@ -3727,8 +3604,7 @@ modules:
           type:
           - Float
           desc: The exponentiated value.
-    - namespace: ''
-      token: RADIANS
+    - token: RADIANS
       file_name: math/radians.go
       line_number: 13
       doc:
@@ -3746,8 +3622,7 @@ modules:
           type:
           - Float
           desc: The angle in radians.
-    - namespace: ''
-      token: RAND
+    - token: RAND
       file_name: math/rand.go
       line_number: 15
       doc:
@@ -3772,8 +3647,7 @@ modules:
           type:
           - Float
           desc: A number greater than 0 and less than 1.
-    - namespace: ''
-      token: RANGE
+    - token: RANGE
       file_name: math/range.go
       line_number: 15
       doc:
@@ -3808,8 +3682,7 @@ modules:
           - Float[]
           desc: Array of numbers in the specified range, optionally with increments
             other than 1.
-    - namespace: ''
-      token: ROUND
+    - token: ROUND
       file_name: math/round.go
       line_number: 14
       doc:
@@ -3827,8 +3700,7 @@ modules:
           type:
           - Int
           desc: The nearest integer, rounding half away from zero.
-    - namespace: ''
-      token: SIN
+    - token: SIN
       file_name: math/sin.go
       line_number: 14
       doc:
@@ -3846,8 +3718,7 @@ modules:
           type:
           - Float
           desc: The sin, in radians, of a given number.
-    - namespace: ''
-      token: SQRT
+    - token: SQRT
       file_name: math/sqrt.go
       line_number: 14
       doc:
@@ -3865,8 +3736,7 @@ modules:
           type:
           - Float
           desc: The square root.
-    - namespace: ''
-      token: STDDEV_POPULATION
+    - token: STDDEV_POPULATION
       file_name: math/stddev_population.go
       line_number: 14
       doc:
@@ -3885,8 +3755,7 @@ modules:
           type:
           - Float
           desc: The population standard deviation.
-    - namespace: ''
-      token: STDDEV_SAMPLE
+    - token: STDDEV_SAMPLE
       file_name: math/stddev_sample.go
       line_number: 14
       doc:
@@ -3905,8 +3774,7 @@ modules:
           type:
           - Float
           desc: The sample standard deviation.
-    - namespace: ''
-      token: SUM
+    - token: SUM
       file_name: math/sum.go
       line_number: 13
       doc:
@@ -3924,8 +3792,7 @@ modules:
           type:
           - Float
           desc: The sum of the values.
-    - namespace: ''
-      token: TAN
+    - token: TAN
       file_name: math/tan.go
       line_number: 14
       doc:
@@ -3943,8 +3810,7 @@ modules:
           type:
           - Float
           desc: The tangent.
-    - namespace: ''
-      token: VARIANCE_POPULATION
+    - token: VARIANCE_POPULATION
       file_name: math/variance_population.go
       line_number: 14
       doc:
@@ -3963,8 +3829,7 @@ modules:
           type:
           - Float
           desc: The population variance.
-    - namespace: ''
-      token: VARIANCE_SAMPLE
+    - token: VARIANCE_SAMPLE
       file_name: math/variance_sample.go
       line_number: 14
       doc:
@@ -3985,9 +3850,9 @@ modules:
           desc: The sample variance.
   objects:
     name: objects
+    namespace: ''
     functions:
-    - namespace: ''
-      token: HAS
+    - token: HAS
       file_name: objects/has.go
       line_number: 13
       doc:
@@ -4004,8 +3869,7 @@ modules:
           type:
           - Boolean
           desc: True if the key exists else false.
-    - namespace: ''
-      token: KEEP_KEYS
+    - token: KEEP_KEYS
       file_name: objects/keep_keys.go
       line_number: 14
       doc:
@@ -4028,8 +3892,7 @@ modules:
           type:
           - Object
           desc: New object with only given keys.
-    - namespace: ''
-      token: KEYS
+    - token: KEYS
       file_name: objects/keys.go
       line_number: 15
       doc:
@@ -4052,8 +3915,7 @@ modules:
           type:
           - String[]
           desc: Array that contains object keys.
-    - namespace: ''
-      token: MERGE
+    - token: MERGE
       file_name: objects/merge.go
       line_number: 13
       doc:
@@ -4070,8 +3932,7 @@ modules:
           type:
           - Object
           desc: Object created by merging.
-    - namespace: ''
-      token: MERGE_RECURSIVE
+    - token: MERGE_RECURSIVE
       file_name: objects/merge_recursive.go
       line_number: 13
       doc:
@@ -4088,8 +3949,7 @@ modules:
           type:
           - Object
           desc: Object created by merging.
-    - namespace: ''
-      token: VALUES
+    - token: VALUES
       file_name: objects/values.go
       line_number: 13
       doc:
@@ -4106,8 +3966,7 @@ modules:
           type:
           - Any[]
           desc: Values of document returned in any order.
-    - namespace: ''
-      token: ZIP
+    - token: ZIP
       file_name: objects/zip.go
       line_number: 16
       doc:
@@ -4133,9 +3992,9 @@ modules:
           desc: An object with the keys and values assembled.
   path:
     name: path
+    namespace: PATH
     functions:
-    - namespace: PATH
-      token: BASE
+    - token: BASE
       file_name: path/base.go
       line_number: 14
       doc:
@@ -4153,8 +4012,7 @@ modules:
           type:
           - String
           desc: The last component of the path.
-    - namespace: PATH
-      token: CLEAN
+    - token: CLEAN
       file_name: path/clean.go
       line_number: 14
       doc:
@@ -4171,8 +4029,7 @@ modules:
           type:
           - String
           desc: The shortest path name equivalent to path
-    - namespace: PATH
-      token: DIR
+    - token: DIR
       file_name: path/dir.go
       line_number: 14
       doc:
@@ -4189,8 +4046,7 @@ modules:
           type:
           - String
           desc: The directory component of path.
-    - namespace: PATH
-      token: EXT
+    - token: EXT
       file_name: path/ext.go
       line_number: 14
       doc:
@@ -4207,8 +4063,7 @@ modules:
           type:
           - String
           desc: The extension of the last component of path.
-    - namespace: PATH
-      token: IS_ABS
+    - token: IS_ABS
       file_name: path/is_abs.go
       line_number: 14
       doc:
@@ -4225,8 +4080,7 @@ modules:
           type:
           - Boolean
           desc: True if the path is absolute.
-    - namespace: PATH
-      token: JOIN
+    - token: JOIN
       file_name: path/join.go
       line_number: 14
       doc:
@@ -4245,8 +4099,7 @@ modules:
           type:
           - String
           desc: Single path from the given elements.
-    - namespace: PATH
-      token: MATCH
+    - token: MATCH
       file_name: path/match.go
       line_number: 15
       doc:
@@ -4269,8 +4122,7 @@ modules:
           type:
           - Boolean
           desc: True if the name matches the pattern.
-    - namespace: PATH
-      token: SEPARATE
+    - token: SEPARATE
       file_name: path/separate.go
       line_number: 14
       doc:
@@ -4289,9 +4141,9 @@ modules:
           desc: First item is a directory component, and second is a filename component.
   strings:
     name: strings
+    namespace: ''
     functions:
-    - namespace: ''
-      token: CONCAT
+    - token: CONCAT
       file_name: strings/concat.go
       line_number: 13
       doc:
@@ -4309,8 +4161,7 @@ modules:
           type:
           - String
           desc: A string value.
-    - namespace: ''
-      token: CONCAT_SEPARATOR
+    - token: CONCAT_SEPARATOR
       file_name: strings/concat.go
       line_number: 47
       doc:
@@ -4335,8 +4186,7 @@ modules:
           type:
           - String
           desc: Concatenated string.
-    - namespace: ''
-      token: CONTAINS
+    - token: CONTAINS
       file_name: strings/contains.go
       line_number: 15
       doc:
@@ -4368,8 +4218,7 @@ modules:
           - Boolean
           - Int
           desc: A value indicating whether a specified substring occurs within a string.
-    - namespace: ''
-      token: DECODE_URI_COMPONENT
+    - token: DECODE_URI_COMPONENT
       file_name: strings/decode.go
       line_number: 36
       doc:
@@ -4386,8 +4235,7 @@ modules:
           type:
           - String
           desc: Decoded string.
-    - namespace: ''
-      token: ENCODE_URI_COMPONENT
+    - token: ENCODE_URI_COMPONENT
       file_name: strings/encode.go
       line_number: 17
       doc:
@@ -4404,8 +4252,7 @@ modules:
           type:
           - String
           desc: Encoded string.
-    - namespace: ''
-      token: ESCAPE_HTML
+    - token: ESCAPE_HTML
       file_name: strings/escape.go
       line_number: 16
       doc:
@@ -4424,8 +4271,7 @@ modules:
           type:
           - String
           desc: Escaped string.
-    - namespace: ''
-      token: FIND_FIRST
+    - token: FIND_FIRST
       file_name: strings/find.go
       line_number: 17
       doc:
@@ -4462,8 +4308,7 @@ modules:
           - Int
           desc: The character position of the match. if search is not contained in
             text, -1 is returned. if search is empty, start is returned.
-    - namespace: ''
-      token: FIND_LAST
+    - token: FIND_LAST
       file_name: strings/find.go
       line_number: 63
       doc:
@@ -4500,8 +4345,7 @@ modules:
           - Int
           desc: The character position of the match. if search is not contained in
             text, -1 is returned. if search is empty, start is returned.
-    - namespace: ''
-      token: FMT
+    - token: FMT
       file_name: strings/fmt.go
       line_number: 18
       doc:
@@ -4524,8 +4368,7 @@ modules:
           type:
           - String
           desc: String formed by template using arguments.
-    - namespace: ''
-      token: FROM_BASE64
+    - token: FROM_BASE64
       file_name: strings/decode.go
       line_number: 16
       doc:
@@ -4542,8 +4385,7 @@ modules:
           type:
           - String
           desc: The decoded string.
-    - namespace: ''
-      token: JSON_PARSE
+    - token: JSON_PARSE
       file_name: strings/json.go
       line_number: 13
       doc:
@@ -4560,8 +4402,7 @@ modules:
           type:
           - Any
           desc: Parsed value.
-    - namespace: ''
-      token: JSON_STRINGIFY
+    - token: JSON_STRINGIFY
       file_name: strings/json.go
       line_number: 34
       doc:
@@ -4578,8 +4419,7 @@ modules:
           type:
           - String
           desc: Json string.
-    - namespace: ''
-      token: LEFT
+    - token: LEFT
       file_name: strings/substr.go
       line_number: 61
       doc:
@@ -4602,8 +4442,7 @@ modules:
           type:
           - String
           desc: The leftmost characters of the string value by index.
-    - namespace: ''
-      token: LIKE
+    - token: LIKE
       file_name: strings/like.go
       line_number: 15
       doc:
@@ -4633,8 +4472,7 @@ modules:
           type:
           - Boolean
           desc: Returns true if the pattern is contained in text, and false otherwise.
-    - namespace: ''
-      token: LOWER
+    - token: LOWER
       file_name: strings/case.go
       line_number: 13
       doc:
@@ -4652,8 +4490,7 @@ modules:
           type:
           - String
           desc: This string in lower case.
-    - namespace: ''
-      token: LTRIM
+    - token: LTRIM
       file_name: strings/trim.go
       line_number: 34
       doc:
@@ -4678,8 +4515,7 @@ modules:
           type:
           - String
           desc: The string without chars at the left-hand side.
-    - namespace: ''
-      token: MD5
+    - token: MD5
       file_name: strings/encode.go
       line_number: 32
       doc:
@@ -4697,8 +4533,7 @@ modules:
           type:
           - String
           desc: Md5 checksum as hex string.
-    - namespace: ''
-      token: RANDOM_TOKEN
+    - token: RANDOM_TOKEN
       file_name: strings/random.go
       line_number: 26
       doc:
@@ -4718,8 +4553,7 @@ modules:
           - String
           desc: A generated token consisting of lowercase letters, uppercase letters
             and numbers.
-    - namespace: ''
-      token: REGEX_MATCH
+    - token: REGEX_MATCH
       file_name: strings/regex.go
       line_number: 16
       doc:
@@ -4749,8 +4583,7 @@ modules:
           type:
           - Any[]
           desc: An array of strings containing the matches.
-    - namespace: ''
-      token: REGEX_REPLACE
+    - token: REGEX_REPLACE
       file_name: strings/regex.go
       line_number: 133
       doc:
@@ -4787,8 +4620,7 @@ modules:
           - String
           desc: Returns the string text with the search regex pattern replaced with
             the replacement string wherever the pattern exists in text
-    - namespace: ''
-      token: REGEX_SPLIT
+    - token: REGEX_SPLIT
       file_name: strings/regex.go
       line_number: 58
       doc:
@@ -4825,8 +4657,7 @@ modules:
           type:
           - Any[]
           desc: An array of strings splitted by the expression.
-    - namespace: ''
-      token: REGEX_TEST
+    - token: REGEX_TEST
       file_name: strings/regex.go
       line_number: 100
       doc:
@@ -4856,8 +4687,7 @@ modules:
           type:
           - Boolean
           desc: Returns true if the pattern is contained in text, and false otherwise.
-    - namespace: ''
-      token: RIGHT
+    - token: RIGHT
       file_name: strings/substr.go
       line_number: 88
       doc:
@@ -4880,8 +4710,7 @@ modules:
           type:
           - String
           desc: The rightmost characters of the string value.
-    - namespace: ''
-      token: RTRIM
+    - token: RTRIM
       file_name: strings/trim.go
       line_number: 55
       doc:
@@ -4906,8 +4735,7 @@ modules:
           type:
           - String
           desc: The string without chars at the right-hand side.
-    - namespace: ''
-      token: SHA1
+    - token: SHA1
       file_name: strings/encode.go
       line_number: 48
       doc:
@@ -4925,8 +4753,7 @@ modules:
           type:
           - String
           desc: Sha1 checksum as hex string.
-    - namespace: ''
-      token: SHA512
+    - token: SHA512
       file_name: strings/encode.go
       line_number: 64
       doc:
@@ -4944,8 +4771,7 @@ modules:
           type:
           - String
           desc: Sha512 checksum as hex string.
-    - namespace: ''
-      token: SPLIT
+    - token: SPLIT
       file_name: strings/split.go
       line_number: 16
       doc:
@@ -4976,8 +4802,7 @@ modules:
           type:
           - String[]
           desc: Array of strings.
-    - namespace: ''
-      token: SUBSTITUTE
+    - token: SUBSTITUTE
       file_name: strings/substitute.go
       line_number: 17
       doc:
@@ -5012,8 +4837,7 @@ modules:
           type:
           - String
           desc: Returns a string with replace substring.
-    - namespace: ''
-      token: SUBSTRING
+    - token: SUBSTRING
       file_name: strings/substr.go
       line_number: 15
       doc:
@@ -5043,8 +4867,7 @@ modules:
           type:
           - String
           desc: A substring of value.
-    - namespace: ''
-      token: TO_BASE64
+    - token: TO_BASE64
       file_name: strings/encode.go
       line_number: 80
       doc:
@@ -5061,8 +4884,7 @@ modules:
           type:
           - String
           desc: A base64 representation of the string.
-    - namespace: ''
-      token: TRIM
+    - token: TRIM
       file_name: strings/trim.go
       line_number: 14
       doc:
@@ -5087,8 +4909,7 @@ modules:
           type:
           - String
           desc: The string without chars on both sides.
-    - namespace: ''
-      token: UNESCAPE_HTML
+    - token: UNESCAPE_HTML
       file_name: strings/unescape.go
       line_number: 17
       doc:
@@ -5108,8 +4929,7 @@ modules:
           type:
           - String
           desc: Escaped string.
-    - namespace: ''
-      token: UPPER
+    - token: UPPER
       file_name: strings/case.go
       line_number: 28
       doc:
@@ -5129,9 +4949,9 @@ modules:
           desc: This string in upper case.
   testing:
     name: testing
+    namespace: T
     functions:
-    - namespace: T
-      token: Array
+    - token: Array
       file_name: testing/array.go
       line_number: 13
       doc:
@@ -5150,8 +4970,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: Binary
+    - token: Binary
       file_name: testing/binary.go
       line_number: 13
       doc:
@@ -5170,8 +4989,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: DateTime
+    - token: DateTime
       file_name: testing/datetime.go
       line_number: 13
       doc:
@@ -5190,8 +5008,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: Empty
+    - token: Empty
       file_name: testing/empty.go
       line_number: 14
       doc:
@@ -5214,8 +5031,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: Equal
+    - token: Equal
       file_name: testing/equal.go
       line_number: 14
       doc:
@@ -5240,8 +5056,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: Fail
+    - token: Fail
       file_name: testing/fail.go
       line_number: 11
       doc:
@@ -5254,8 +5069,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: 'False'
+    - token: 'False'
       file_name: testing/false.go
       line_number: 14
       doc:
@@ -5274,8 +5088,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: Float
+    - token: Float
       file_name: testing/float.go
       line_number: 13
       doc:
@@ -5294,8 +5107,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: Gt
+    - token: Gt
       file_name: testing/gt.go
       line_number: 14
       doc:
@@ -5320,8 +5132,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: Gte
+    - token: Gte
       file_name: testing/gte.go
       line_number: 14
       doc:
@@ -5347,8 +5158,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: Include
+    - token: Include
       file_name: testing/include.go
       line_number: 16
       doc:
@@ -5376,8 +5186,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: Int
+    - token: Int
       file_name: testing/int.go
       line_number: 13
       doc:
@@ -5396,8 +5205,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: Len
+    - token: Len
       file_name: testing/len.go
       line_number: 15
       doc:
@@ -5423,8 +5231,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: Lt
+    - token: Lt
       file_name: testing/lt.go
       line_number: 14
       doc:
@@ -5449,8 +5256,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: Lte
+    - token: Lte
       file_name: testing/lte.go
       line_number: 14
       doc:
@@ -5476,8 +5282,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: MATCH
+    - token: MATCH
       file_name: testing/match.go
       line_number: 15
       doc:
@@ -5502,8 +5307,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: None
+    - token: None
       file_name: testing/none.go
       line_number: 14
       doc:
@@ -5522,8 +5326,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: Object
+    - token: Object
       file_name: testing/object.go
       line_number: 13
       doc:
@@ -5542,8 +5345,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: String
+    - token: String
       file_name: testing/string.go
       line_number: 13
       doc:
@@ -5562,8 +5364,7 @@ modules:
           optional: true
           default_value:
         returns:
-    - namespace: T
-      token: 'True'
+    - token: 'True'
       file_name: testing/true.go
       line_number: 14
       doc:
@@ -5584,9 +5385,9 @@ modules:
         returns:
   types:
     name: types
+    namespace: ''
     functions:
-    - namespace: ''
-      token: IS_ARRAY
+    - token: IS_ARRAY
       file_name: types/is_array.go
       line_number: 13
       doc:
@@ -5603,8 +5404,7 @@ modules:
           type:
           - Boolean
           desc: Returns true if value is array, otherwise false.
-    - namespace: ''
-      token: IS_BINARY
+    - token: IS_BINARY
       file_name: types/is_binary.go
       line_number: 13
       doc:
@@ -5621,8 +5421,7 @@ modules:
           type:
           - Boolean
           desc: Returns true if value is binary, otherwise false.
-    - namespace: ''
-      token: IS_BOOL
+    - token: IS_BOOL
       file_name: types/is_boolean.go
       line_number: 13
       doc:
@@ -5639,8 +5438,7 @@ modules:
           type:
           - Boolean
           desc: Returns true if value is boolean, otherwise false.
-    - namespace: ''
-      token: IS_DATETIME
+    - token: IS_DATETIME
       file_name: types/is_date_time.go
       line_number: 13
       doc:
@@ -5657,8 +5455,7 @@ modules:
           type:
           - Boolean
           desc: Returns true if value is date time, otherwise false.
-    - namespace: ''
-      token: IS_FLOAT
+    - token: IS_FLOAT
       file_name: types/is_float.go
       line_number: 13
       doc:
@@ -5675,8 +5472,7 @@ modules:
           type:
           - Boolean
           desc: Returns true if value is float, otherwise false.
-    - namespace: ''
-      token: IS_HTML_DOCUMENT
+    - token: IS_HTML_DOCUMENT
       file_name: types/is_html_document.go
       line_number: 13
       doc:
@@ -5693,8 +5489,7 @@ modules:
           type:
           - Boolean
           desc: Returns true if value is htmldocument, otherwise false.
-    - namespace: ''
-      token: IS_HTML_ELEMENT
+    - token: IS_HTML_ELEMENT
       file_name: types/is_html_element.go
       line_number: 13
       doc:
@@ -5711,8 +5506,7 @@ modules:
           type:
           - Boolean
           desc: Returns true if value is htmlelement, otherwise false.
-    - namespace: ''
-      token: IS_INT
+    - token: IS_INT
       file_name: types/is_int.go
       line_number: 13
       doc:
@@ -5729,8 +5523,7 @@ modules:
           type:
           - Boolean
           desc: Returns true if value is int, otherwise false.
-    - namespace: ''
-      token: IS_NAN
+    - token: IS_NAN
       file_name: types/is_nan.go
       line_number: 13
       doc:
@@ -5747,8 +5540,7 @@ modules:
           type:
           - Boolean
           desc: Returns true if value is nan, otherwise false.
-    - namespace: ''
-      token: IS_NONE
+    - token: IS_NONE
       file_name: types/is_none.go
       line_number: 13
       doc:
@@ -5765,8 +5557,7 @@ modules:
           type:
           - Boolean
           desc: Returns true if value is none, otherwise false.
-    - namespace: ''
-      token: IS_OBJECT
+    - token: IS_OBJECT
       file_name: types/is_object.go
       line_number: 13
       doc:
@@ -5783,8 +5574,7 @@ modules:
           type:
           - Boolean
           desc: Returns true if value is object, otherwise false.
-    - namespace: ''
-      token: IS_STRING
+    - token: IS_STRING
       file_name: types/is_string.go
       line_number: 13
       doc:
@@ -5801,8 +5591,7 @@ modules:
           type:
           - Boolean
           desc: Returns true if value is string, otherwise false.
-    - namespace: ''
-      token: TO_ARRAY
+    - token: TO_ARRAY
       file_name: types/to_array.go
       line_number: 15
       doc:
@@ -5823,8 +5612,7 @@ modules:
           type:
           - Any[]
           desc: An array value.
-    - namespace: ''
-      token: TO_BOOL
+    - token: TO_BOOL
       file_name: types/to_boolean.go
       line_number: 18
       doc:
@@ -5847,8 +5635,7 @@ modules:
           type:
           - Boolean
           desc: The appropriate boolean value.
-    - namespace: ''
-      token: TO_DATETIME
+    - token: TO_DATETIME
       file_name: types/to_date_time.go
       line_number: 12
       doc:
@@ -5866,8 +5653,7 @@ modules:
           type:
           - DateTime
           desc: Parsed date time.
-    - namespace: ''
-      token: TO_FLOAT
+    - token: TO_FLOAT
       file_name: types/to_float.go
       line_number: 20
       doc:
@@ -5892,8 +5678,7 @@ modules:
           type:
           - Float
           desc: A float value.
-    - namespace: ''
-      token: TO_INT
+    - token: TO_INT
       file_name: types/to_int.go
       line_number: 20
       doc:
@@ -5918,8 +5703,7 @@ modules:
           type:
           - Int
           desc: An integer value.
-    - namespace: ''
-      token: TO_STRING
+    - token: TO_STRING
       file_name: types/to_string.go
       line_number: 12
       doc:
@@ -5937,8 +5721,7 @@ modules:
           type:
           - String
           desc: String representation of a given value.
-    - namespace: ''
-      token: TYPENAME
+    - token: TYPENAME
       file_name: types/type_name.go
       line_number: 12
       doc:
@@ -5957,9 +5740,9 @@ modules:
           desc: Returns string representation of a type.
   utils:
     name: utils
+    namespace: ''
     functions:
-    - namespace: ''
-      token: PRINT
+    - token: PRINT
       file_name: utils/log.go
       line_number: 12
       doc:
@@ -5972,8 +5755,7 @@ modules:
           optional: false
           default_value:
         returns:
-    - namespace: ''
-      token: WAIT
+    - token: WAIT
       file_name: utils/wait.go
       line_number: 12
       doc:

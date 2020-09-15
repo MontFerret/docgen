@@ -50,16 +50,11 @@ def main():
     for file in walk_implementations(stdlib_path):
         for extract in get_doc_extracts(file, stdlib_path, token_impl_map):
             package = extract.token_package
-            namespace = ""
-
-            if extract.token_package in namespaces:
-                namespace = namespaces[extract.token_package]
 
             if not representations.get(package):
                 representations[package] = []
 
             representations[package].append({
-                'namespace': namespace,
                 'token': extract.token_name,
                 'file_name': extract.file_name,
                 'line_number': extract.line_number,
@@ -67,8 +62,14 @@ def main():
             })
 
     for name in sorted(representations.keys()):
+        namespace = ""
+
+        if name in namespaces:
+            namespace = namespaces[name]
+
         modules[name] = {
             'name': name,
+            'namespace': namespace,
             'functions': sorted(representations[name], key=lambda i: i['token']),
         }
 
